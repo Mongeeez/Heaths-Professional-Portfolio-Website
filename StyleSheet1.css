@@ -1,0 +1,177 @@
+﻿html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #002244;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    header nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+            header nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                padding: 5px 10px;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+                header nav ul li a:hover {
+                    background-color: #0056b3;
+                }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 60px; 
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #002244;
+}
+
+p {
+    margin-bottom: 20px; 
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-options {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.gmail-logo, .social-icon {
+    width: 50px; 
+    height: auto;
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+    .gmail-logo:hover, .social-icon:hover {
+        transform: scale(1.1);
+    }
+
+.footer {
+    background-color: #002244;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.about-image {
+    max-width: 100%;
+    width: 400px; 
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px; 
+}
+
+.larger-image {
+    width: 500px; 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-top: 20px; 
+}
+
+    .download-button:hover {
+        background-color: #003f7f;
+    }
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+        header nav ul li {
+            margin: 10px 0;
+        }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image {
+        width: 100%; 
+        margin-top: 10px;
+    }
+}
